@@ -1,0 +1,484 @@
+
+/* ==============================
+   PROPERTIES PAGE
+================================ */
+
+.properties-page {
+  min-height: 100vh;
+  background: #83858e;
+  padding-bottom: 70px;
+  color: #17243a;
+}
+
+/* Page Heading */
+
+
+.properties-heading {
+  text-align: center;
+  padding: 85px 20px 70px;
+
+  background:
+    linear-gradient(
+      rgba(127, 125, 125, 0.80),
+      rgba(230, 220, 220, 0.70)
+    ),
+    url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=75");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.properties-tag {
+  display: inline-block;
+  color: #614512;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.properties-heading h1 {
+  font-size: clamp(30px, 5vw, 48px);
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #14243b;
+}
+
+.properties-heading h1 span {
+  color: #806634;
+}
+
+.properties-heading p {
+  color: #000000;
+  font-size: 16px;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.7;
+ 
+}
+
+/* Main Content */
+
+.properties-content {
+  max-width: 1250px;
+  width: 92%;
+  margin: 55px auto 0;
+}
+
+/* Toolbar */
+
+.properties-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.properties-toolbar h2 {
+  font-size: 25px;
+  color: #14243b;
+  margin-bottom: 7px;
+}
+
+.properties-toolbar p {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* Filters */
+
+.property-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.property-filters button {
+  border: 1px solid #dce3ed;
+  background: white;
+  color: #475569;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.property-filters button:hover,
+.property-filters button.active {
+  background: #14243b;
+  color: white;
+  border-color: #14243b;
+}
+
+/* Property Grid */
+
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+/* Property Card */
+
+.property-card {
+  background: white;
+  border-radius: 13px;
+  overflow: hidden;
+  border: 1px solid #e9edf4;
+  box-shadow: 0 5px 20px rgba(20, 36, 59, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(20, 36, 59, 0.12);
+}
+
+/* Property Image */
+
+.property-image {
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+}
+
+.property-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.property-card:hover .property-image img {
+  transform: scale(1.06);
+}
+
+.property-purpose,
+.property-featured {
+  position: absolute;
+  top: 15px;
+  padding: 7px 12px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.property-purpose {
+  left: 15px;
+  background: #14243b;
+  color: white;
+}
+
+.property-featured {
+  right: 15px;
+  background: #f5c451;
+  color: #17243a;
+}
+
+/* Property Details */
+
+.property-details {
+  padding: 20px;
+}
+
+.property-details h3 {
+  font-size: 19px;
+  color: #14243b;
+  margin-bottom: 9px;
+}
+
+.property-location {
+  color: #8490a1;
+  font-size: 13px;
+  margin-bottom: 17px;
+}
+
+.property-location span {
+  color: #3478df;
+  font-size: 17px;
+  margin-right: 4px;
+}
+
+.property-price {
+  font-size: 22px;
+  color: #3478df;
+  margin-bottom: 17px;
+}
+
+/* Property Information */
+
+.property-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  padding: 15px 0;
+  border-top: 1px solid #edf0f5;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.property-info span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* Card Footer */
+
+.property-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 16px;
+}
+
+.property-card-footer > span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.property-card-footer button {
+  border: none;
+  background: transparent;
+  color: #c9a96e;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.property-card-footer button:hover {
+  color: #14243b;
+}
+
+/* Disclaimer */
+
+.property-disclaimer {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 950px) {
+  .properties-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .properties-heading {
+    padding: 55px 18px 40px;
+  }
+
+  .properties-heading p {
+    font-size: 14px;
+  }
+
+  .properties-content {
+    width: 90%;
+    margin-top: 35px;
+  }
+
+  .properties-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .properties-toolbar h2 {
+    font-size: 22px;
+  }
+
+  .property-filters {
+    width: 100%;
+  }
+
+  .property-filters button {
+    flex: 1;
+    padding: 10px 15px;
+  }
+
+  .properties-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .property-image {
+    height: 220px;
+  }
+}
+
+
+
+
+/* ==============================
+   PROPERTY SEARCH PANEL
+================================ */
+
+.property-search-panel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  background: #ffffff;
+  padding: 25px;
+  border: 1px solid #e5eaf1;
+  border-radius: 13px;
+  margin-bottom: 35px;
+  box-shadow: 0 5px 20px rgba(20, 36, 59, 0.04);
+}
+
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-field label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.filter-field input,
+.filter-field select {
+  width: 100%;
+  height: 45px;
+  padding: 0 12px;
+  border: 1px solid #dce3ed;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #334155;
+  font-size: 13px;
+}
+
+.filter-field input:focus,
+.filter-field select:focus {
+  border-color: #c9a96e;
+  box-shadow: 0 0 0 3px rgba(52, 120, 223, 0.1);
+}
+
+.search-field {
+  grid-column: span 2;
+}
+
+.clear-filters-btn {
+  height: 45px;
+  align-self: end;
+  background: #14243b;
+  border: 1px solid #14243b;
+  color: white;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.clear-filters-btn:hover {
+  background: #3478df;
+  border-color: #3478df;
+}
+
+/* No Results */
+
+.no-properties {
+  grid-column: 1 / -1;
+  text-align: center;
+  background: white;
+  padding: 60px 20px;
+  border-radius: 12px;
+}
+
+.no-properties h3 {
+  color: #14243b;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.no-properties p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.no-properties button {
+  background: #14243b;
+  color: white;
+  padding: 11px 22px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+/* Responsive Search Panel */
+
+@media (max-width: 800px) {
+  .property-search-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .search-field {
+    grid-column: span 2;
+  }
+
+  .clear-filters-btn {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .property-search-panel {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+
+  .search-field,
+  .clear-filters-btn {
+    grid-column: span 1;
+  }
+}
+
+
+
+/* ==============================
+   PERFORMANCE OPTIMIZATION
+================================ */
+
+.property-card {
+  transform: none;
+  transition: box-shadow 0.2s ease;
+  box-shadow: 0 2px 10px rgba(20, 36, 59, 0.04);
+}
+
+.property-card:hover {
+  transform: none;
+  box-shadow: 0 4px 14px rgba(20, 36, 59, 0.08);
+}
+
+.property-image img {
+  transform: none;
+  transition: none;
+}
+
+.property-card:hover .property-image img {
+  transform: none;
+}
+
+.property-image {
+  background: #e9edf4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .property-card,
+  .property-image img {
+    transition: none !important;
+    transform: none !important;
+  }
+}
