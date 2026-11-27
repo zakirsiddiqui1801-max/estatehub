@@ -56,6 +56,58 @@ function About() {
       </section>
 
 
+      
+      
+{/* Developer Section */}
+<section className="about-developer">
+
+  <div className="about-developer-container">
+
+    <div className="about-developer-image-wrapper">
+      <img
+        src="/zakir.jpg"
+        alt="Mohd Zakir - Developer of EstateHub"
+        className="about-developer-image"
+      />
+    </div>
+
+    <div className="about-developer-content">
+
+      <span className="about-developer-label">
+        MEET THE DEVELOPER
+      </span>
+
+      <h2>Mohd Zakir</h2>
+
+      <h3>Developer of EstateHub</h3>
+
+      <p>
+        Hello! I'm Mohd Zakir, the developer behind EstateHub.
+        I created this platform with the vision of making real
+        estate property discovery simple, convenient and
+        accessible for everyone.
+      </p>
+
+      <p>
+        From designing the interface to developing its features,
+        my goal has been to create a smooth and user-friendly
+        experience that helps people explore properties with
+        confidence.
+      </p>
+
+      <div className="about-developer-tags">
+        <span>Creative Development</span>
+        <span>Modern Web Experience</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
       {/* Experience and Achievements */}
       <section className="about-stats">
 

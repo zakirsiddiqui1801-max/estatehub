@@ -31,9 +31,12 @@ function Contact() {
             form.reset()
 
         } catch (error) {
-            console.error('EmailJS Error:', error)
-            setErrorMessage('Message could not be sent. Please try again.')
+            console.error('EmailJS Status:', error?.status)
+            console.error('EmailJS Response:', error?.text)
+            console.error('Full EmailJS Error:', error)
 
+            setErrorMessage('Message could not be sent. Please try again.')
+            
         } finally {
             setIsSending(false)
         }
@@ -217,7 +220,7 @@ function Contact() {
                                             id="contact-phone"
                                             name="phone"
                                             placeholder="Enter your phone number"
-                                            pattern="[0-9+\-\s()]{7,20}"
+                                            pattern="[-0-9+\s()]{7,20}"
                                             title="Enter a valid phone number"
                                             required
                                         />

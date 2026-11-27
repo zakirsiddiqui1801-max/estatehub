@@ -372,3 +372,128 @@
     height: 280px;
   }
 }
+
+
+/* ================================
+    DEVELOPER SECTION
+================================ */
+
+.about-developer {
+  width: 100%;
+  padding: 75px 7%;
+  background: #f3eee5;
+}
+
+.about-developer-container {
+  max-width: 1150px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 65px;
+}
+
+/* Developer Image */
+
+.about-developer-image-wrapper {
+  flex: 0 0 270px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 5px solid #ffffff;
+  box-shadow: 0 15px 40px rgba(20, 38, 55, 0.15);
+}
+
+.about-developer-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Developer Content */
+
+.about-developer-content {
+  flex: 1;
+}
+
+.about-developer-label {
+  display: inline-block;
+  color: #b68b45;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.about-developer-content h2 {
+  color: #172c40;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.about-developer-content h3 {
+  color: #b68b45;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 22px;
+}
+
+.about-developer-content p {
+  color: #536170;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+/* Developer Tags */
+
+.about-developer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.about-developer-tags span {
+  padding: 9px 15px;
+  background: #ffffff;
+  color: #20394d;
+  border: 1px solid #e5dccd;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+  .about-developer {
+    padding: 50px 22px;
+  }
+
+  .about-developer-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .about-developer-image-wrapper {
+    flex: none;
+    width: 210px;
+    height: 250px;
+  }
+
+  .about-developer-content h2 {
+    font-size: 30px;
+  }
+
+  .about-developer-tags {
+    justify-content: center;
+  }
+
+}
+
